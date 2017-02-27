@@ -1,5 +1,8 @@
 package cardGameWithGui;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * Basic card class. Values are ranged from 2 to 14, where 11 is a Jack,
  * 12 is a Queen, 13 is a King and 14 is an Ace. Suits are Hearts, Diamonds,
@@ -7,7 +10,7 @@ package cardGameWithGui;
  * @author Benjamin Creem
  *
  */
-public class Card {
+public class Card extends JFrame{
 	private int value;
 	private String suit;
 	public Card(int v, String s)
