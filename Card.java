@@ -58,6 +58,10 @@ public class Card extends JFrame{
 			return "Not a possible card";
 		}
 	}
+	public ImageIcon back()
+	{
+		return back;
+	}
 }
 
 

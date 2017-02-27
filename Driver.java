@@ -2,13 +2,12 @@ package cardGameWithGui;
 import javax.swing.*;
 import java.awt.*;
 
-public class Driver {
+public class Driver extends JFrame{
 	public static void main(String[] args)
 	{
-		JFrame frame = new JFrame("Card Games");
-		frame.setSize(1280, 720);
-		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		frame.setVisible(true);
-		
+		GoFish goFish = new GoFish();
+		goFish.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		goFish.setSize(500, 500);
+		goFish.setVisible(true);
 	}
 }
