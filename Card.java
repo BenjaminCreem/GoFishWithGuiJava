@@ -1,7 +1,12 @@
 package cardGameWithGui;
 
+<<<<<<< HEAD
 import javax.swing.*;
 import java.awt.*;
+=======
+import java.awt.*;
+import javax.swing.*;
+>>>>>>> WorkingOnCard
 
 /**
  * Basic card class. Values are ranged from 2 to 14, where 11 is a Jack,
@@ -11,12 +16,18 @@ import java.awt.*;
  *
  */
 public class Card extends JFrame{
+<<<<<<< HEAD
+=======
+	private ImageIcon back = new ImageIcon("BackOfCard.jpg");
+	private ImageIcon front;
+>>>>>>> WorkingOnCard
 	private int value;
 	private String suit;
 	public Card(int v, String s)
 	{
 		value = v;
 		suit = s;
+		front = new ImageIcon(toString());
 	}
 	public int Value()
 	{
@@ -54,6 +65,10 @@ public class Card extends JFrame{
 		{
 			return "Not a possible card";
 		}
+	}
+	public ImageIcon back()
+	{
+		return back;
 	}
 }
 
